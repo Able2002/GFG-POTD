@@ -1,0 +1,14 @@
+class Solution{
+public:
+    int maxIndexDiff(int arr[], int n) {
+        int i=0, ans = 0, j = n-1;
+       for(int i=0; i<j; i++){
+           j = n-1;
+           while(j >= 0 && arr[j] < arr[i])
+               j--;
+           ans = max(j-i, ans);
+       }
+       return ans;
+    }
+
+};
