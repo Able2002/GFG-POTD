@@ -20,3 +20,4 @@ public:
         return store[index];
     }
 };
+
