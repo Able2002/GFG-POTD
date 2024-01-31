@@ -49,3 +49,4 @@ bool search(struct TrieNode *root, string key)
     return searchKey(root, key);
 }
 };
+
